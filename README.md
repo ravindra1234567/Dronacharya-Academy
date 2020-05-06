@@ -1,2 +1,0 @@
-# Dronacharya-Academy
-# dronacharyaacademy

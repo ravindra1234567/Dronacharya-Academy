@@ -50,7 +50,7 @@
                 </tr>
                 <div style="padding-left: 20px;"?>
                     <tr>
-                        <td style="padding-block-start:13px;"> Directorate of Physical Education & Sports<br> Takshila Parisar, Khandwa Road,<br> Indore (M.P.) 452001  <hr width="18%"color="white"></td>
+                        <td style="padding-block-start:13px;">Dronacharya Academy <br>Near of Gadesh Mandir in front of house Dr. Megha oberoy ,stadium road Nowgong,<br> Chhatarpur (M.P.) 471201  <hr width="18%"color="white"></td>
 
                     </tr>
 
@@ -81,8 +81,8 @@
             </div>
             <div class="col-md-6" align="center" style=" color:#676565; padding-block-start: 0px; padding-bottom:0px;">
                 <hr width="80%"color="#676565">
-                © 2020 Directorate of Dronacharyaacademy. All Rights Reserved.<br>
-                Website managed by IET-DAVV(indore) Student <a style="color:#676565;" href="developers.php">web development team. </a>
+                © 2020 Dronacharyaacademy. All Rights Reserved.<br>
+                Website managed by IET-DAVV(indore) Students <a style="color:#676565;" href="developers.php">web development team. </a>
                 <br>For any queries contact at: ravindrakushwahanwg@gmail.com
 
             </div>
