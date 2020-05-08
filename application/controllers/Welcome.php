@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 		parent::__construct();
 		// $this->header = 'include/student/header';
 		// $this->footer = 'include/student/footer';
-		$this->load->view('include/student/header');
+		// $this->load->view('include/student/header');
 	}
 	public function index()
 	{

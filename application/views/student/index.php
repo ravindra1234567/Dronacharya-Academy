@@ -1,7 +1,4 @@
- <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+<?php $this->load->view('include/student/header'); ?>
   <style>
   	/* Make the image fully responsive */
   	.carousel-inner img {
@@ -21,11 +18,7 @@
   			<img src="<?= base_url() ?>/assets/img/slider/4.jpg" width="100" height="100" alt="Los Angeles"> 
   		</div>
   		<div class="carousel-item">
-  			<img src="<?= base_url() ?>/assets/img/slider/5.png" alt="Chicago" >
-  			<!-- <div class="carousel-caption">
-  				<h3>Chicago</h3>
-  				<p>Thank you, Chicago!</p>
-  			</div> -->   
+  			<img src="<?= base_url() ?>/assets/img/slider/5.png" alt="Chicago" > 
   		</div>
   		<div class="carousel-item">
   			<img src="<?= base_url() ?>/assets/img/slider/6.jpg" alt="New York" >

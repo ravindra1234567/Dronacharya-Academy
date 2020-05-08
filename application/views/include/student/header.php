@@ -80,7 +80,7 @@
 			
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link font" href="#">Home</a>
+					<a class="nav-item nav-link font" href="<?= base_url()?>home">Home</a>
 					<a  class="nav-item nav-link font " href="#">Courses1</a>
 					<a  class="nav-item nav-link  active" href="#"></a>
 					<li class="dropdown nav-item nav-link">
