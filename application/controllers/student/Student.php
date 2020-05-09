@@ -13,7 +13,7 @@ class Student extends CI_Controller{
 
 	}
 	function about(){
-
+		$this->load->view('student/about');
 	}
 	function courses(){
 		

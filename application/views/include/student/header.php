@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- fornt link -->
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oxanium:wght@200;800&family=Pridi:wght@500&display=swap" rel="stylesheet">
 
 		<style type="text/css">
 			@media only screen and (max-width: 425px) {
