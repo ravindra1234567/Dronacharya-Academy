@@ -74,7 +74,7 @@
 		<nav class="navbar navbar-light dark  sticky-top navbar-expand-lg  mb-3" style="background: white">
 			<a href="index.jsp"><img id="logo" class="img-fluid rounded-circle" src="<?=base_url()?>assets/img/logo.png" ></a>
 
-			<a id="IET1" class="navbar-brand ml-2" href="#" style="font-size:2rem;color: #827f7f">DRONACHARYA ACADEMY</a>
+			<a id="IET1" class="navbar-brand ml-2" href="#" style="font-size:2rem;color: #827f7f">DRONACHARYA  &nbsp ACADEMY</a>
 			<a id="IET2" class=" " style="color: #827f7f">DRONACHARYA ACADEMY</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -92,8 +92,8 @@
 							<li><a class="nav-item nav-link " href="course-detail.php">Course Detail</a></li>                
 						</ul>
 					</li>  
-					<a  class="nav-item nav-link"  href="#">Gallery</a>
-					<a class="nav-item nav-link " href="about.php">About US</a>
+					<a  class="nav-item nav-link"  href="<?= base_url()?>contact" >Contact</a>
+					<a class="nav-item nav-link " href="<?= base_url()?>about">About US</a>
 					<a class="nav-item nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true"></a>
 				</div>
 			</div>
