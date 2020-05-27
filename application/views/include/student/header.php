@@ -91,7 +91,8 @@
 							<li><a class="nav-link" href="course.php">Course Archive</a></li>              
 							<li><a class="nav-item nav-link " href="course-detail.php">Course Detail</a></li>                
 						</ul>
-					</li>  
+					</li>
+					<a  class="nav-item nav-link"  href="<?= base_url()?>contact" >Gallery</a>  
 					<a  class="nav-item nav-link"  href="<?= base_url()?>contact" >Contact</a>
 					<a class="nav-item nav-link " href="<?= base_url()?>about">About US</a>
 					<a class="nav-item nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true"></a>

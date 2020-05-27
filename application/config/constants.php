@@ -86,6 +86,10 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 // email configuration
 
-define('TO_MAIL', 'ravindrakushwahanwg@gmail.com');
-define('FROM_MAIL', '18bcs090@ietdavv.edu.in');
-define('FROM_TEXT', 'TECHARISE');
+// define('TO_MAIL', 'ravindrakushwahanwg@gmail.com');
+// define('FROM_MAIL', '18bcs090@ietdavv.edu.in');
+// define('FROM_TEXT', 'TECHARISE');
+
+
+  
+?>
