@@ -31,6 +31,7 @@ class Users extends CI_Controller
             
             //Prepare array of user data
             $userData = array(
+                'title' => $this->input->post('title'),
                 'picture' => $picture
             );
             
@@ -40,11 +41,19 @@ class Users extends CI_Controller
             //Storing insertion status message.
             if($insertUserData){
                 $this->session->set_flashdata('success_msg', 'Image have been Uploaded successfully. <button type="button" class="close" data-dismiss="alert">&times;</button>');
+                // $this->load->view("gallery/gallery_manage");
+                redirect('Gallery/Users/galleryManage');
+
             }else{
                 $this->session->set_flashdata('error_msg', 'Some problems occured, please try again.<button type="button" class="close" data-dismiss="alert">&times;</button>');
+                redirect('Gallery/Users/galleryManage');
             }
         }
         //Form for adding user data
         $this->load->view('gallery/add');
+    }
+    public function galleryManage(){
+
+        $this->load->view("gallery/gallery_manage");
     }
 }
