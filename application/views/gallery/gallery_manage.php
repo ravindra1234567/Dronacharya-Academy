@@ -59,7 +59,7 @@
 								<td><a href="<?php echo $statusLink; ?>" title="<?php echo $statusTooltip; ?>"><span class="badge <?php echo ($row['status'] == 1)?'badge-success':'badge-danger'; ?>"><?php echo ($row['status'] == 1)?'Active':'Inactive'; ?></span></a></td>
 								<td colspan="8">
 									<a href="<?php echo base_url('Gallery/Users/view/'.$row['id']); ?>" class="btn btn-primary">view</a>
-									<a href="<?php echo base_url('Gallery/Users/edit/'.$row['id']); ?>" class="btn btn-warning">edit</a>
+									<!-- <a href="<?php echo base_url('Gallery/Users/edit/'.$row['id']); ?>" class="btn btn-warning">edit</a> -->
 									<a href="<?php echo base_url('Gallery/Users/delete/'.$row['id']); ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete data?')?true:false;">delete</a>
 								</td>
 							</tr>

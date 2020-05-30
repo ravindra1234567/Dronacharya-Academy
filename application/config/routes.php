@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['home'] = 'student/Student';
 $route['courses'] = 'student/Student/course';
-$route['gallery'] = 'student/gallery';
+$route['gallery'] = 'Gallery/Gallery/index';
 $route['contact'] = 'student/contact';
 $route['about'] = 'student/Student/about';
 $route['404_override'] = '';
