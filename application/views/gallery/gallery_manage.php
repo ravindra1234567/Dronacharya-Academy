@@ -14,6 +14,14 @@
 			</div>
 		</div>
 	<?php }?>
+	<?php 
+
+	// foreach ($imageData as $key => $value) {
+	// 	echo "<pre>";
+	// 	print_r($value);
+	// }
+
+	//exit;?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 head">
@@ -30,17 +38,17 @@
 					<tr>
 						<th width="5%">#</th>
 						<th width="10%"></th>
-						<th width="40%">Title</th>
+						<th width="18%">Title</th>
 						<th width="19%">Created</th>
 						<th width="8%">Status</th>
 						<th width="18%">Action</th>
 					</tr>
 				</thead>
 				<tbody>
-					<?php if(!empty($gallery)){ $i=0;  
-						foreach($gallery as $row){ $i++; 
-							$image = !empty($row['file_name'])?'<img src="'.base_url().'uploads/images/'.$row['file_name'].'" alt="" />':''; 
-							$statusLink = ($row['status'] == 1)?site_url('manage_gallery/block/'.$row['id']):site_url('manage_gallery/unblock/'.$row['id']);  
+					<?php if(!empty($imageData)){ $i=0;  
+						foreach($imageData as $row){ $i++; 
+							$image = !empty($row['picture'])?'<img src="'.base_url().'uploads/images/'.$row['picture'].'" height= "70" width="100" alt="" />':''; 
+							$statusLink = ($row['status'] == 1)?site_url('Gallery/Users/block/'.$row['id']):site_url('Gallery/Users/unblock/'.$row['id']);  
 							$statusTooltip = ($row['status'] == 1)?'Click to Inactive':'Click to Active';  
 							?>
 							<tr>
@@ -49,10 +57,10 @@
 								<td><?php echo $row['title']; ?></td>
 								<td><?php echo $row['created']; ?></td>
 								<td><a href="<?php echo $statusLink; ?>" title="<?php echo $statusTooltip; ?>"><span class="badge <?php echo ($row['status'] == 1)?'badge-success':'badge-danger'; ?>"><?php echo ($row['status'] == 1)?'Active':'Inactive'; ?></span></a></td>
-								<td>
-									<a href="<?php echo base_url('manage_gallery/view/'.$row['id']); ?>" class="btn btn-primary">view</a>
-									<a href="<?php echo base_url('manage_gallery/edit/'.$row['id']); ?>" class="btn btn-warning">edit</a>
-									<a href="<?php echo base_url('manage_gallery/delete/'.$row['id']); ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete data?')?true:false;">delete</a>
+								<td colspan="8">
+									<a href="<?php echo base_url('Gallery/Users/view/'.$row['id']); ?>" class="btn btn-primary">view</a>
+									<a href="<?php echo base_url('Gallery/Users/edit/'.$row['id']); ?>" class="btn btn-warning">edit</a>
+									<a href="<?php echo base_url('Gallery/Users/delete/'.$row['id']); ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete data?')?true:false;">delete</a>
 								</td>
 							</tr>
 						<?php } }else{ ?>
