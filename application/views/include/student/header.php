@@ -71,6 +71,11 @@
 
 			
 		</head>
+		<div class="bg-primary p-3">
+			<span class="material-icons">
+settings_phone
+</span>
+		</div>
 		<nav class="navbar navbar-light dark  sticky-top navbar-expand-lg  mb-3" style="background: white">
 			<a href="index.jsp"><img id="logo" class="img-fluid rounded-circle" src="<?=base_url()?>assets/img/logo.png" ></a>
 

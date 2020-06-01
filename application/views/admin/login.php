@@ -25,7 +25,7 @@
 			width: 350px;
 			margin-top: 50px;
 			margin-bottom: auto;
-			background: #f39c12;
+			background: #f5e6cb;
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -127,9 +127,9 @@
 				</div>
 
 				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
+					<!-- <div class="d-flex justify-content-center links">
 						Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-					</div>
+					</div> -->
 					<div class="d-flex justify-content-center links">
 						<a href="#">Forgot your password?</a>
 					</div>
