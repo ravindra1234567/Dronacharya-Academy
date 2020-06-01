@@ -56,6 +56,7 @@ $route['gallery'] = 'Gallery/Gallery/index';
 $route['contact'] = 'student/contact';
 $route['about'] = 'student/Student/about';
 $route['admin'] = 'admin/admin';
+$route['student_login'] = 'student/student/login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

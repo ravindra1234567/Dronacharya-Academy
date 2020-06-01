@@ -68,9 +68,9 @@ $this->load->view('include/student/header');
                 <br>
                 <address>
                     <h5>Head Office:</h5>
-                    <div>Company Inc, </div>
-                    <div>L/01 Rotterdam Rd East,</div>
-                    <div>89088 Southampton, United States</div>
+                    <div>Dronacharya Academy, </div>
+                    <div>Near of Gadesh Mandir in front of house Dr. Megha oberoy  ,</div>
+                    <div>stadium road Nowgong district chhatarpur ( MP) 471201</div>
                     <div title="Phone"><strong>Phone:</strong> +91 7047178936</div>
                     <div><a href="ravindrakushwahanwg.com" target="_top" rel="noopener noreferrer">ravindrakushwahanwg@gmail.com</a></div>
                 </address>

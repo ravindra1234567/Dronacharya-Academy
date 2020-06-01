@@ -21,6 +21,9 @@ class Student extends CI_Controller{
 	function gallery(){
 		$this->load->view('student/gallery');
 	}
+	function login(){
+		$this->load->view("student/login");
+	}
 }
 
 
