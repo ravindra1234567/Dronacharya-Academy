@@ -54,7 +54,7 @@ class User extends CI_Model{
         }
     }
     public function select(){
-        return $this->db->get("users")->result_array();
+        return $this->db->get("image")->result_array();
     }
     public function update($data, $id) { 
         if(!empty($data) && !empty($id)){ 
