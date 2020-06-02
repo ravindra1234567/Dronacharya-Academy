@@ -1,4 +1,4 @@
-<?php $this->load->view("include/student/header"); ?>
+<?php $this->load->view("include/admin/header"); ?>
 <?php if($this->session->flashdata('success_msg')){ ?>
 	<div class="row">
 		<div class="col-md-2 ml-2"></div>

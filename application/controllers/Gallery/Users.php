@@ -68,7 +68,7 @@ class Users extends CI_Controller
             $data['title'] = $data['image']['title']; 
 
             // Load the details page view 
-            $this->load->view('include/student/header', $data); 
+            $this->load->view('include/admin/header', $data); 
             $this->load->view('gallery/view', $data); 
             // $this->load->view('templates/footer'); 
         }else{ 

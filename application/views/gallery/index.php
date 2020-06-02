@@ -84,7 +84,7 @@ img.zoom {
 
 
 <!-- Page Content -->
-<div class="container-fluid page-top">
+<div class="container-fluid page-top mt-auto">
     <h2>Gallery Images</h2>
     <hr>
     <div class="row">

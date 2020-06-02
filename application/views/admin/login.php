@@ -101,7 +101,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form>
+					<form method="POST" action="<?php base_url()?>admin/admin/home">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -121,7 +121,7 @@
 							</div>
 						</div>
 						<div class="d-flex justify-content-center mt-3 login_container">
-							<button type="button" name="button" class="btn login_btn">Login</button>
+							<button type="submit" name="button" class="btn login_btn">Login</button>
 						</div>
 					</form>
 				</div>

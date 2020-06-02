@@ -31,7 +31,7 @@ if ($this->session->flashdata('change_password') !== null) {
 			<div class="row">
 				<div  class="border shadow rounded  m-1 mb-5 col-lg-12 rounded"  id="hidelogin"><!-- login window-->
 
-					<div class=" p-3 h3 font-weight-light rounded-top text-light text-center" style="margin-left: -15px;margin-right:-15px;background-color: #030970; ">Student Login</div>
+					<div class=" p-3 h3 font-weight-light rounded-top  text-center" style="margin-left: -15px;margin-right:-15px;background-color: #cdafdb; ">Student Login</div>
 					<form method="POST" class="login " action="<?= base_url()?>student/Student/studentLogin">
 
 						<div class="form-row">
@@ -49,7 +49,7 @@ if ($this->session->flashdata('change_password') !== null) {
 						</div>
 						<div class="form-row">
 							<div class="form-group ">
-								<button class="btn btn-sm  btn-block m-1   font-weight-light  text-light text-center" type="submit" style="background-color: #030970;">
+								<button class="btn btn-sm  btn-block m-1   font-weight-light   text-center "  type="submit" style="background-color: #cdafdb;">
 									Login <i class="fas fa-sign-in-alt"></i>
 								</button>
 								<a href="<?=base_url().'forgotpassword'?>">
@@ -67,7 +67,7 @@ if ($this->session->flashdata('change_password') !== null) {
 						<h6 class="col-lg-12  font-weight-bolder " style="text-align: center;">If you are First time user</h6> 
 					</div>
 					<div class="row p-2">
-						<p class="text-primary sign-up btn  col-lg-12 font-weight-light  text-light text-center" style="cursor:pointer;background-color: #030970;" onclick="$('div.sign-up').show();$('#hidelogin').hide();" id="showSign">
+						<p class="text-primary sign-up btn  col-lg-12  text-center" style="cursor:pointer;background-color: #cdafdb;color:#080505;" onclick="$('div.sign-up').show();$('#hidelogin').hide();" id="showSign">
 							Sign Up/Register
 							<i class='fas fa-user-plus'></i>
 						</p>
@@ -79,7 +79,7 @@ if ($this->session->flashdata('change_password') !== null) {
 				<div class="col-sm-12 m-1 sign-up shadow-lg" style="display: none;">
 					<form method="POST"  class="sign-up" action="<?= base_url()?>student/Student/studentSignUp">
 						<div class="row">
-							<div class="col-sm-12 p-3 h3 rounded-top font-weight-light  text-light text-center" style="background-color: #058728">
+							<div class="col-sm-12 p-3 h3 rounded-top font-weight-light  text-center" style="background-color:#cdafdb ">
 								Student Sign Up
 								<button type="button" class="close text-white" onclick="$('div.sign-up').hide();$('#hidelogin').show();">&times;</button>
 							</div>
@@ -119,31 +119,37 @@ if ($this->session->flashdata('change_password') !== null) {
 									</select>
 								</div>
 
-								<div class="col-sm-4 p-1">
+								<div class="col-sm-6 p-1">
 									<label for="student-class"><small>Select Class<sup class="text-danger">*</sup></small></label>
 									<select id="student-class" name="student-class" class="form-control">
-										<option value="09">9&#x1D57;&#x02B0; (IX)</option>
-										<option value="10">10&#x1D57;&#x02B0; (X)</option>
-										<option value="11">11&#x1D57;&#x02B0; (XI)</option>
-										<option value="12">12&#x1D57;&#x02B0; (XII)</option>
-										<option value="13">Dropper</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="BSC">BSC</option>
+										<option value="MSC">MSC</option>
+										<option value="BE">BE</option>
+										<option value="LLB">LLB</option>
+										<option value="BA">BA</option>
+										<option value="MA">MA</option>
+										<option value="BCOM">BCOM</option>
+										<option value="MCOM">MCOM</option>
+										<option value="Diploma">Diploma</option>
 									</select>
 								</div>
-								<div class="col-sm-4 p-1">
+								<div class="col-sm-6 p-1">
 									<label for="student-medium"><small>Select Medium<sup class="text-danger">*</sup></small></label>
 									<select id="student-medium" name="student-medium" class="form-control">
 										<option value="1">English</option>
 										<option value="0">Hindi</option>
 									</select>
 								</div>
-								<div class="col-sm-4 p-1">
+								<!-- <div class="col-sm-4 p-1">
 									<label for="student-stream"><small>Select Stream<sup class="text-danger">*</sup></small></label>
 									<div class="small text-danger font-italic" id="no-stream-for-9-10" style="display: none;">Stream does not apply for <b>9&#x1D57;&#x02B0;</b> &  <b>10&#x1D57;&#x02B0;</b> class students.</div>
 									<select id="student-stream" name="student-stream" class="form-control">
 										<option value="1">Mathematics</option>
 										<option value="0">Biology</option>
 									</select>
-								</div>
+								</div> -->
 							</div>
 							<div class="col-sm-12">
 								<label class="checkbox-inline small">
@@ -152,7 +158,7 @@ if ($this->session->flashdata('change_password') !== null) {
 								</label>
 							</div>
 							<div class="col-sm-12 pl-4 pr-4 mt-2 mb-2">
-								<button type="submit" class="btn  btn-block sign-up font-weight-light  text-light" type="submit" style="background-color: #058728">Sign Up/Register <i class='fas fa-user-plus'></i></button>
+								<button type="submit" class="btn  btn-block sign-up font-weight-light " type="submit" style="background-color: #cdafdb">Sign Up/Register <i class='fas fa-user-plus'></i></button>
 
 							</div>
 						</div>
