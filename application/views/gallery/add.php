@@ -1,4 +1,4 @@
-<?php $this->load->view("include/student/header")?>
+<?php $this->load->view("include/admin/header")?>
 </div>
 <div class="row">
     <div class="col-md-2"></div>
