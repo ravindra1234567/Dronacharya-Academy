@@ -17,7 +17,7 @@
 				<div class="card-body">
 					<h4 class="card-title">E-Books:</h4>
 					<p class="card-text">You can manage E-books from here. You can upload , update, delete or view their details.</p>
-					<a href="<?=base_url()?>admin/EbookAdmin" class="m-1 card-link btn btn-light btn-outline-dark">Upload E-Book</a>
+					<a href="<?=base_url()?>ebook" class="m-1 card-link btn btn-light btn-outline-dark">Upload E-Book</a>
 					<!-- <a href="<?=base_url()?>Promocode/view" class="m-1 card-link btn btn-light btn-outline-dark">View Promocodes</a> -->
 				</div>
 			</div>

@@ -36,8 +36,8 @@ if ($this->session->flashdata('change_password') !== null) {
 
 						<div class="form-row">
 							<div class="form-group col-lg-12">
-								<label class="small font-weight-bolder" for="login-mobile">Mobile Number</label>
-								<input type="text" id="login-mobile" class="form-control form-control-sm" placeholder="Enter mobile number" required autofocus name="login-mobile" autocomplete="off" value="<?=$this->session->flashdata('mobile_number')?>">
+								<label class="small font-weight-bolder" for="login-email">Emial Address</label>
+								<input type="email" id="login-email" class="form-control form-control-sm" placeholder="Enter email address" required autofocus name="login-email" autocomplete="off" value="<?=$this->session->flashdata('Enter email address')?>">
 							</div>
 						</div>
 						<div class="form-row">
@@ -85,6 +85,10 @@ if ($this->session->flashdata('change_password') !== null) {
 							</div>
 							<div class="ml-2 mr-2 row">
 								<div class="col-sm-6 p-1">
+									<label for="student-email"><small>Email Address<sup class="text-danger">*</sup></small></label>
+									<input type="email" id="student-email" class="form-control" placeholder="Enter Email Address " required autofocus name="student-email"  autocomplete="off">
+								</div>
+								<div class="col-sm-6 p-1">
 									<label for="student-name"><small>Full Name<sup class="text-danger">*</sup></small></label>
 									<input type="text" id="student-name" class="form-control" placeholder="Enter full name" required autofocus name="student-name"  autocomplete="off">
 								</div>
@@ -111,17 +115,26 @@ if ($this->session->flashdata('change_password') !== null) {
 								<div class="col-sm-6 p-1">
 									<label for="student-state"><small>Select State<sup class="text-danger">*</sup></small></label>
 									<select id="student-state" name="student-state" class="form-control">
+										<option disabled selected>Select State</option>
+										<?php foreach ($state as $key => $value) {?>
+												<option value="<?= $value['id']?>"><?php echo $value['state_name']?></option>
+											<?php }   ?>
 									</select>
 								</div>
 								<div class="col-sm-6 p-1">
 									<label for="student-city"><small>Select City<sup class="text-danger">*</sup></small></label>
 									<select id="student-city" name="student-city" class="form-control">
+										<option disabled selected>Select City</option>
+										<?php foreach ($city as $key => $value) {?>
+											<option value="<?= $value['id']?>"><?php echo $value['city_name']?></option>
+										<?php }   ?>
 									</select>
 								</div>
 
 								<div class="col-sm-6 p-1">
 									<label for="student-class"><small>Select Class<sup class="text-danger">*</sup></small></label>
 									<select id="student-class" name="student-class" class="form-control">
+										<option disabled selected>Select Class</option>
 										<option value="11">11</option>
 										<option value="12">12</option>
 										<option value="BSC">BSC</option>
@@ -142,14 +155,16 @@ if ($this->session->flashdata('change_password') !== null) {
 										<option value="0">Hindi</option>
 									</select>
 								</div>
-								<!-- <div class="col-sm-4 p-1">
-									<label for="student-stream"><small>Select Stream<sup class="text-danger">*</sup></small></label>
-									<div class="small text-danger font-italic" id="no-stream-for-9-10" style="display: none;">Stream does not apply for <b>9&#x1D57;&#x02B0;</b> &  <b>10&#x1D57;&#x02B0;</b> class students.</div>
-									<select id="student-stream" name="student-stream" class="form-control">
-										<option value="1">Mathematics</option>
-										<option value="0">Biology</option>
-									</select>
-								</div> -->
+
+								<div class="col-sm-6 p-1">
+									<label for="student-medium"><small>School / College Name <sup class="text-danger">*</sup></small></label>
+									<input id="college" name="college" class="form-control" placeholder="Enter College / School" />
+								</div>
+
+								<div class="col-sm-6 p-1">
+									<label for="student-address"><small> Address <sup class="text-danger">*</sup></small></label>
+									<textarea id="student-address" class="form-control" placeholder="Enter Address " required autofocus name="student-address"  autocomplete="off"></textarea> 
+								</div>
 							</div>
 							<div class="col-sm-12">
 								<label class="checkbox-inline small">
@@ -323,5 +338,5 @@ if ($this->session->flashdata('change_password') !== null) {
 		?>
 	});
 </script>
-<?php //$this->load->view("include/student/footer")?>
+
 

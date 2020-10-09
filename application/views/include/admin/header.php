@@ -84,7 +84,7 @@
 			<div class="navbar-nav ">
 				<a class="nav-item nav-link font text-white" href="<?= base_url()?>adminHome">Home</a>
 				<a class="nav-item nav-link font text-white" href="<?= base_url()?>galleryManage">Gallery Manage</a>
-				<a class="nav-item nav-link font text-white" href="#">Upload PDF</a>
+				<a class="nav-item nav-link font text-white" href="<?= base_url()?>ebook">Upload PDF</a>
 				<a  class="nav-item nav-link  active" href="#"></a>
 				<li class="dropdown nav-item nav-link">
 					<a href="#" class="dropdown-toggle nav-link btn btn-primary" data-toggle="dropdown">Admin<span class=""></span></a>

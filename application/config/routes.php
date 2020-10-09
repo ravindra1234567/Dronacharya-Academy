@@ -53,6 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['home'] = 'student/Student';
 $route['courses'] = 'student/Student/course';
 $route['gallery'] = 'Gallery/Gallery/index';
+$route['ebook'] = 'admin/EbookAdmin';
 $route['galleryManage'] = 'Gallery/Users/galleryManage';
 $route['contact'] = 'student/contact';
 $route['about'] = 'student/Student/about';
@@ -60,6 +61,12 @@ $route['admin'] = 'admin/admin';
 $route['adminHome'] = 'admin/admin/home';
 $route['adminGallery'] = 'admin/admin/gallery';
 $route['student_login'] = 'student/student/login';
+
+
+$route['email-send'] = 'emailcontroller';
+$route['email'] = 'emailcontroller/send';
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
